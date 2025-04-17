@@ -17,14 +17,3 @@ print(add(9,10))
 
 print(square(6))
 
-class FunnelLearningGoal(CommonTimeStamp):
-    title = models.CharField(max_length=64, verbose_name=u"Laerning Goal Title")
-    is_active = models.BooleanField(default=True)
-    order_by = models.IntegerField(null=True, blank=True, verbose_name="Order By")
-    class Meta:
-        verbose_name = u"Funnel Learning Goal"
-        verbose_name_plural = verbose_name
-    def __unicode__(self):
-        return '%s' % (self.title, )
-    def __str__(self):
-        return '%s' % (self.title, )
