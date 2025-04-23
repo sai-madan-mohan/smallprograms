@@ -17,3 +17,18 @@ print(add(9,10))
 
 print(square(6))
 
+ migrations.RemoveField(
+            model_name='batch',
+            name='detail',
+        ),
+        migrations.RemoveField(
+            model_name='batchsession',
+            name='detail',
+        ),
+        migrations.RemoveField(
+            model_name='course',
+            name='detail',
+        ),
+        migrations.RemoveField(
+            model_name='lesson',
+            name='detail',
