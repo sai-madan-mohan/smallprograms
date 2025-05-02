@@ -135,3 +135,6 @@ print(suits[0])
 print(suits[-1])
 suits[1] = "Mark 50"
 print(suits)
+
+def find_the_element(suits,target):
+    
