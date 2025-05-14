@@ -48,6 +48,25 @@ print(f"{n} is prime" if is_prime(n) else f"{n} is not prime")
 def fibonacci(n):
     a,b=0,1
     for _ in range(n):
-        print(a,end="")
+        print(a,end=" ")
         a,b=b,a+b
 fibonacci(9)
+
+def factorial(n):
+    result=1
+    for i in range(2,n+1):
+        result*=1
+    return result
+print(factorial(9))
+
+def factorial_recursive(n):
+    return 1 if n==0 else n*factorial_recursive(n-1)
+print(factorial_recursive(5))
+
+
+def even_odd(n):
+    if n%2!=0:
+        print("odd")
+    else:
+        print("even")
+even_odd(9)
