@@ -32,3 +32,22 @@ def count_vowels_consanants(s):
 s="MADAM"
 v,c=count_vowels_consanants(s)
 print(f"vowels count is {v} and consonants count is {c}")
+
+# checking is prime
+def is_prime(n):
+    if n<=1:
+        return False
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return False
+    return True
+n = 5
+print(f"{n} is prime" if is_prime(n) else f"{n} is not prime")
+
+# checking is fibonacci           
+def fibonacci(n):
+    a,b=0,1
+    for _ in range(n):
+        print(a,end="")
+        a,b=b,a+b
+fibonacci(9)
