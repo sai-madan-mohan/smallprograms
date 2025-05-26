@@ -24,8 +24,17 @@
 # print(suit_a)
 
 
-age= 20
-if age<18:
-    print("you are not eligible to vote")
-else:
-    print("you are eligible to vote")
+# age= 20
+# if age<18:
+#     print("you are not eligible to vote")
+# else:
+#     print("you are eligible to vote")
+
+
+
+import time
+
+for i in range(5, 0, -1):
+    print(f"Self-destruct in {i}...")
+    time.sleep(1)
+print("Boom! 💥")
